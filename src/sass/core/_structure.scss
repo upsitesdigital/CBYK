@@ -1,0 +1,60 @@
+/*======================================
+  Main structure
+======================================*/
+
+body {
+  background: #161616;
+  //background: url(../img/home.png) top center no-repeat;
+  background-size: contain;
+  overflow-x: hidden;
+}
+
+// end header
+// main
+main {
+  overflow: hidden;
+  .block_01 {
+    height: 1419px;
+    background: url(../images/block01.jpg) center center no-repeat;
+  }
+  .block_03 {
+    height: 3749px;
+    background: url(../images/block03.jpg) center center no-repeat;
+  }
+  .block_05 {
+    height: 3448px;
+    background: url(../images/block05.jpg) center center no-repeat;
+  }
+  .block_02 {
+    overflow: hidden;
+    background-color: aqua;
+    background: url(../images/img01.jpg) center center no-repeat;
+    background-size: cover;
+    .bg {
+      overflow: hidden;
+    }
+  }
+  .block_04 {
+    background-color: aqua;
+    background: url(../images/img02.png) center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    .bg {
+      overflow: hidden;
+    }
+  }
+}
+
+@include breakpoint2($min:xl, $max:'') {}
+
+@include breakpoint2($min:lg, $max:xl) {}
+
+@include breakpoint2($min:md, $max:lg) {}
+
+@include breakpoint2($min:sm, $max:md) {}
+
+@include breakpoint2($min:xs, $max:sm) {}
+
+@include breakpoint2($min:'', $max:xs) {}
+
+// end main

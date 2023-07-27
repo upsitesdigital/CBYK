@@ -155,12 +155,12 @@ export default function() {
           }
         });
 
-        tl2.fromTo(elem, { scale: 1 }, { scale: 4, duration: 1, ease: "power1.in" });
+        tl2.fromTo(elem, { top: 0, scale: 1 }, { top: '1000%', scale: 38, duration: 1, ease: "power1.in" });
 
       });
 
       gsap.utils.toArray('.block_04 .bg').forEach((elem, i) => {
-        var tl4 = gsap.timeline({
+        var tl2 = gsap.timeline({
           scrollTrigger: {
             trigger: '.block_04',
             start: 'top top',
@@ -171,7 +171,7 @@ export default function() {
           }
         });
 
-        tl4.fromTo(elem, { scale: 1 }, { scale: 4, duration: 1, ease: "power1.in" });
+        tl2.fromTo(elem, { top: 0, scale: 1 }, { top: '1000%', scale: 38, duration: 1, ease: "power1.in" });
 
       });
     },

@@ -30,6 +30,40 @@ main {
     background-color: aqua;
     background: url(../images/img01.jpg) center center no-repeat;
     background-size: cover;
+    .block-text {
+      position: absolute;
+      top: 60%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      opacity: 0;
+      width: 100%;
+      max-width: 863px;
+    }
+    span {
+      font-family: $font-main;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0.01em;
+      text-align: left;
+      background: #1C1C1C;
+      padding: 16px 24px 16px 24px;
+      color: #D4441C;
+      border-radius: 600px;
+      display: inline-block;
+    }
+    h2 {
+      font-size: 45px;
+      color: white;
+      line-height: 160%;
+      font-family: $font-main;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 53px;
+      letter-spacing: 0.01em;
+      text-align: left;
+      padding: 20px 0 0 0;
+    }
     .bg {
       overflow: hidden;
       position: relative;
@@ -40,6 +74,19 @@ main {
     background: url(../images/img02.png) center center no-repeat;
     background-size: cover;
     overflow: hidden;
+    .block-text {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      opacity: 0;
+    }
+    h2 {
+      font-size: 45px;
+      color: white;
+      font-weight: 900;
+      line-height: 160%;
+    }
     .bg {
       overflow: hidden;
       position: relative;

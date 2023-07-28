@@ -144,7 +144,7 @@ export default function() {
     // desk
     "(min-width: 769px)": function() {
       gsap.utils.toArray('.block_02 .bg').forEach((elem, i) => {
-        var tl2 = gsap.timeline({
+        var tl1 = gsap.timeline({
           scrollTrigger: {
             trigger: '.block_02',
             start: 'top top',
@@ -155,25 +155,56 @@ export default function() {
           }
         });
 
-        tl2.fromTo(elem, { top: 0, scale: 1 }, { top: '1000%', scale: 38, duration: 1, ease: "power1.in" });
+        tl1.fromTo(elem, { top: 0, scale: 1 }, { top: '1000%', scale: 38, duration: 1, ease: "power1.in" });
 
       });
-
-      gsap.utils.toArray('.block_04 .bg').forEach((elem, i) => {
-        var tl2 = gsap.timeline({
+      gsap.utils.toArray('.block_02 .block-text').forEach((elem, i) => {
+        var tl1 = gsap.timeline({
           scrollTrigger: {
-            trigger: '.block_04',
-            start: 'top top',
-            end: 'bottom center',
-            pin: true,
+            trigger: '.block_02',
+            start: '10% 10%',
+            end: '18% 10%',
+            // pin: true,
             markers: true,
             scrub: true
           }
         });
 
-        tl2.fromTo(elem, { top: 0, scale: 1 }, { top: '1000%', scale: 38, duration: 1, ease: "power1.in" });
+        tl1.fromTo(elem, { opacity: 0, left: '40%' }, { opacity: 1, left: '50%', duration: 1, ease: "power1.in" });
 
       });
+
+      gsap.utils.toArray('.block_04 .bg').forEach((elem, i) => {
+        var tl4 = gsap.timeline({
+          scrollTrigger: {
+            trigger: '.block_04',
+            start: 'top top',
+            end: 'bottom center',
+            pin: true,
+            //markers: true,
+            scrub: true
+          }
+        });
+
+        tl4.fromTo(elem, { top: 0, scale: 1 }, { top: '1000%', scale: 38, duration: 1, ease: "power1.in" });
+
+      });
+      gsap.utils.toArray('.block_04 .block-text').forEach((elem, i) => {
+        var tl4 = gsap.timeline({
+          scrollTrigger: {
+            trigger: '.block_04',
+            start: '10% 10%',
+            end: '18% 10%',
+            // pin: true,
+            // markers: true,
+            scrub: true
+          }
+        });
+
+        tl4.fromTo(elem, { opacity: 0, left: '40%' }, { opacity: 1, left: '50%', duration: 1, ease: "power1.in" });
+
+      });
+
     },
 
   });

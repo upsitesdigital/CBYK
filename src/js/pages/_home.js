@@ -143,7 +143,92 @@ export default function() {
   ScrollTrigger.matchMedia({
     // desk
     "(min-width: 769px)": function() {
+      /*gsap.fromTo('.block_02 .bg', {
+        scale: 1,
+        y: 0,
+        duration: 0.1,
+        ease: "power1.in"
+      }, {
+        scrollTrigger: {
+          trigger: '.block_02',
+          start: 'top top',
+          end: 'bottom 50%',
+          pin: true,
+          //markers: true,
+          scrub: true
+        },
+        y: '1800%',
+        scale: 70,
+      });*/
+
       gsap.utils.toArray('.block_02 .bg').forEach((elem, i) => {
+        var tl1 = gsap.timeline({
+          scrollTrigger: {
+            trigger: '.block_02',
+            start: 'top top',
+            end: 'bottom center',
+            pin: true,
+            //markers: true,
+            scrub: true
+          }
+        });
+
+        tl1.fromTo(elem, { top: 0, scale: 1 }, { top: '1800%', scale: 60, duration: 1, ease: "power1.in" });
+
+      });
+      gsap.to('.block_02 .block-text', {
+        scrollTrigger: {
+          trigger: '.block_02',
+          start: '70% 70%',
+          end: '110% 70%',
+          //pin: true,
+          //markers: true,
+          scrub: true
+        },
+        opacity: 1,
+        x: '-50%'
+      });
+
+      gsap.utils.toArray('.block_04 .bg').forEach((elem, i) => {
+        var tl4 = gsap.timeline({
+          scrollTrigger: {
+            trigger: '.block_04',
+            start: 'top top',
+            end: 'bottom center',
+            pin: true,
+            //markers: true,
+            scrub: true
+          }
+        });
+
+        tl4.fromTo(elem, { top: 0, scale: 1 }, { top: '1800%', scale: 60, duration: 1, ease: "power1.in" });
+
+      });
+      gsap.to('.block_04 .block-text', {
+        scrollTrigger: {
+          trigger: '.block_04',
+          start: '70% 70%',
+          end: '110% 70%',
+          //pin: true,
+          //markers: true,
+          scrub: true
+        },
+        opacity: 1,
+        x: '-50%'
+      });
+      gsap.to('.block_04 .block-image', {
+        scrollTrigger: {
+          trigger: '.block_04',
+          start: '70% 70%',
+          end: '110% 70%',
+          //pin: true,
+          //markers: true,
+          scrub: true
+        },
+        opacity: 1,
+      });
+
+      /*gsap.utils.toArray('.block_02 .bg').forEach((elem, i) => {
         var tl1 = gsap.timeline({
           scrollTrigger: {
             trigger: '.block_02',
@@ -203,7 +288,7 @@ export default function() {
 
         tl4.fromTo(elem, { opacity: 0, left: '40%' }, { opacity: 1, left: '50%', duration: 1, ease: "power1.in" });
 
-      });
+      });*/
 
     },
 

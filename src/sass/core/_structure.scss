@@ -30,10 +30,11 @@ main {
     background-color: aqua;
     background: url(../images/img01.jpg) center center no-repeat;
     background-size: cover;
+    height: 100vh;
     .block-text {
       position: absolute;
-      top: 60%;
-      transform: translate(-50%, -50%);
+      top: 40%;
+      transform: translate(-70%, -50%);
       left: 50%;
       opacity: 0;
       width: 100%;
@@ -65,19 +66,39 @@ main {
       padding: 20px 0 0 0;
     }
     .bg {
+      width: 100%;
+      height: 100%;
       overflow: hidden;
       position: relative;
+      background: url(../images/mask.svg) center center no-repeat;
+      background-size: cover;
     }
   }
   .block_04 {
     background-color: aqua;
-    background: url(../images/img02.png) center center no-repeat;
-    background-size: cover;
+    background: url(../images/img02.png) center bottom no-repeat;
+    background-size: contain;
     overflow: hidden;
+    position: relative;
+    height: 100vh;
     .block-text {
       position: absolute;
+      top: 40%;
+      transform: translate(-70%, -70%);
+      left: 50%;
+      opacity: 0;
+      width: 100%;
+      max-width: 863px;
+    }
+    .block-image {
+      width: 588px;
+      height: 588px;
+      background: url(../images/img03.png) center center no-repeat;
+      background-size: contain;
+      border-radius: 50%;
+      position: absolute;
       top: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(0%, -80%);
       left: 50%;
       opacity: 0;
     }
@@ -88,8 +109,12 @@ main {
       line-height: 160%;
     }
     .bg {
+      width: 100%;
+      height: 100%;
       overflow: hidden;
       position: relative;
+      background: url(../images/mask.svg) center center no-repeat;
+      background-size: cover;
     }
   }
 }

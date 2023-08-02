@@ -175,7 +175,7 @@ export default function() {
               scrub: true
             }
           })
-          .fromTo(elem.querySelector('.bg'), { top: 0, scale: 1 }, { top: '1800%', scale: 60, duration: 5, ease: "power1.in" })
+          .fromTo(elem.querySelector('.bg'), { top: 0, scale: 1 }, { top: '1800%', scale: 60, duration: 20, ease: "power1.in" })
           //.fromTo(elem.querySelector('.block-image'), { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.5, ease: "power1.in" }, ">")
           .to(elem.querySelector('.block-text'), {
             opacity: 1,
@@ -183,12 +183,12 @@ export default function() {
             duration: 3,
             delay: 5
           }, "<")
-          .fromTo(elem.querySelector('.block-image .before'), { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 5, ease: Back.easeInOut.config(1.3) }, ">")
-          .fromTo(elem.querySelector('.block-image .after'), { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 8, ease: Back.easeInOut.config(1.3) }, "<")
+          .fromTo(elem.querySelector('.block-image .before'), { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 8, ease: Back.easeInOut.config(1.3) }, ">")
+          .fromTo(elem.querySelector('.block-image .after'), { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 10, ease: Back.easeInOut.config(1.3) }, "<")
           .fromTo(elem.querySelector('.block-image .block-image-block-01'), { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 8, ease: Back.easeInOut.config(1.3) }, "<")
-          .fromTo(elem.querySelector('.block-image .block-image-block-02'), { opacity: 0, left: '207px' }, { opacity: 1, left: '237px', duration: 8, ease: Back.easeInOut.config(1.3) }, "<")
-          .fromTo(elem.querySelector('.block-image .block-image-block-04'), { opacity: 0, left: '168px' }, { opacity: 1, left: '198px', duration: 8, ease: Back.easeInOut.config(1.3), delay: 5 }, "<")
-          .fromTo(elem.querySelector('.block-image .block-image-block-03'), { opacity: 0, left: '306px' }, { opacity: 1, left: '336px', duration: 8, ease: Back.easeInOut.config(1.3), delay: 5 }, "<")
+          .fromTo(elem.querySelector('.block-image .block-image-block-02'), { opacity: 0, left: '207px' }, { opacity: 1, left: '237px', duration: 20, ease: Back.easeInOut.config(1.3) }, "<")
+          .fromTo(elem.querySelector('.block-image .block-image-block-04'), { opacity: 0, left: '168px' }, { opacity: 1, left: '198px', duration: 20, ease: Back.easeInOut.config(1.3), delay: 5 }, "<")
+          .fromTo(elem.querySelector('.block-image .block-image-block-03'), { opacity: 0, left: '306px' }, { opacity: 1, left: '336px', duration: 20, ease: Back.easeInOut.config(1.3), delay: 5 }, "<")
 
 
       });
